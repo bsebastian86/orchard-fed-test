@@ -1,0 +1,17 @@
+{
+  "name": "orchard-fed-test-1",
+  "version": "1.0.0",
+  "description": "* Invision public URL: https://invis.io/N312IJ0C8GMK\r * Assets used in the build have been packaged under the `/assets` folder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.79.2"
+  }
+}
