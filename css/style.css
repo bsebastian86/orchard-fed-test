@@ -5,6 +5,7 @@
   font-style: normal;
   font-optical-sizing: auto;
   font-weight: 400;
+  line-height: 1.6;
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -109,7 +110,7 @@ img {
 
 .columns {
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 
 .col {
@@ -125,14 +126,17 @@ img {
   text-decoration: none;
 }
 
-.col-content h3 {
+.col-heading {
+  display: block;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.6;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  text-decoration: none;
 }
 
 .col-img {
+  display: block;
   margin-bottom: 26px;
   border-bottom: 4px solid #cf1430;
 }
@@ -153,17 +157,19 @@ img {
   display: inline-block !important;
   font-weight: 600;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  text-decoration: none;
+  padding-bottom: 6px;
   margin-top: 26px;
   border-bottom: 1px solid #cf1430;
 }
 
 @media screen and (max-width: 1024px) {
   .main {
-    padding: 50px;
+    padding: 50px 24px;
   }
   .needs {
     flex-wrap: wrap;
+    padding-bottom: 140px;
   }
   .image-grid {
     flex: 0 0 100%;
@@ -173,11 +179,36 @@ img {
     padding-left: 0;
   }
 }
+@media screen and (max-width: 640px) {
+  .columns {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .col {
+    flex: 0 0 100%;
+  }
+}
 @media screen and (max-width: 480px) {
   p {
     font-size: 14px;
   }
+  .needs {
+    padding-bottom: 100px;
+  }
   .needs-heading {
     font-size: 18px;
+  }
+  .latest-heading {
+    font-size: 24px;
+  }
+  .col-content h3 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+  .col-body {
+    font-size: 14px;
+  }
+  .read-more {
+    font-size: 14px;
   }
 }
