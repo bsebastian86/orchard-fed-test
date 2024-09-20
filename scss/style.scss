@@ -30,10 +30,10 @@ p {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
-}
 
-p:not(:last-child) {
-  margin-bottom: 40px;
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 section {
@@ -65,17 +65,17 @@ img {
   grid-template-areas:
     'image-1 image-2'
     'image-1 image-3';
-}
 
-.image-grid a {
-  display: block;
-}
+  a {
+    display: block;
+  }
 
-.image-grid img {
-  display: block;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .image-1 {
@@ -128,13 +128,13 @@ img {
   flex: 1 0 0;
 }
 
-.col-inner,
-.col-inner span {
-  display: block;
-}
-
 .col-inner {
+  display: block;
   text-decoration: none;
+
+  span {
+    display: block;
+  }
 }
 
 .col-heading {
@@ -150,11 +150,11 @@ img {
   display: block;
   margin-bottom: 26px;
   border-bottom: 4px solid #cf1430;
-}
 
-.col-img img {
-  display: block;
-  width: 100%;
+  img {
+    display: block;
+    width: 100%;
+  }
 }
 
 .col-body {
@@ -249,18 +249,18 @@ img {
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   z-index: 10;
-}
 
-.modal-overlay.show {
-  display: block;
-}
+  &.show {
+    display: block;
+  }
 
-.modal-overlay .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 40px;
-  cursor: pointer;
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    cursor: pointer;
+  }
 }
 
 .modal-image {
