@@ -1,9 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 .main {
   background-color: #0e1414;
   min-height: 100vh;
+  padding: 200px 50px;
 }
