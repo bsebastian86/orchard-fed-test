@@ -17,15 +17,21 @@ links.forEach((link) => {
       const imgSrc = link.querySelector('img').src;
       modalImg.src = imgSrc;
     }
+
+    return true;
   });
 });
 
 modalOverlay.addEventListener('click', () => {
   modalOverlay.classList.remove('show');
   body.style.overflow = 'auto';
+
+  return true;
 });
 
 // Prevent bubbling up the DOM - will not close modal
 modalImg.addEventListener('click', (e) => {
   e.stopPropagation();
+
+  return true;
 });
